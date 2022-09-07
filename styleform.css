@@ -1,0 +1,17 @@
+label{
+    display: block;
+    margin-top: 1em;
+}
+
+.formcenter {
+    
+    margin: auto;
+    width: 15%;
+    padding: 10px;
+}
+
+.formbase {
+    background-color: rgb(243, 180, 151);
+    opacity: 0.9;
+    padding: 8px;
+}

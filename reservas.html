@@ -6,6 +6,7 @@
     <meta charset="utf-8" />
 
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styleform.css" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
@@ -42,19 +43,35 @@
 
     </div>
     <main>
-        <form action="">
-            <!-- nombre apellido telefono  mail, tipo de evento(cumpleaños, institucional/corporativo, familiar) cantidad de personas fecha hora -->
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre"><br>
-            <label for="apellido">Apellido:</label>
-            <input type="text" id="apellido" name="apellido"><br>
-            <label for="telefono">Teléfono:</label>
-            <input type="tel" id="telefono" name="telefono"><br>
-            <label for="mail">Mail:</label>
-            <input type="mail" id="mail" name="mail"><br>
-
-
-        </form>
+        <section class="formbase">
+            <div class="formcenter" >
+                <form action="" method="post"  >
+                    <label for="nombre">Nombre:</label><br>
+                    <input type="text" id="nombre" name="nombre" autofocus><br>
+                    <label for="apellido">Apellido:</label><br>
+                    <input type="text" id="apellido" name="apellido"><br>
+                    <label for="telefono">Teléfono:</label><br>
+                    <input type="tel" id="telefono" name="telefono"><br>
+                    <label for="mail">Mail:</label><br>
+                    <input type="email" id="email" name="email"><br>
+                    <label for="tipo">Tipo de evento:</label><br>
+                    <select id="tipo" name="tipo">
+                        <option value="Cumpleaños">Cumpleaños</option>
+                        <option value="Institucional">Institucional</option>
+                        <option value="Corporativo">Corporativo</option>
+                        <option value="Familiar">Familiar</option>
+                    </select><br>
+                    <label for="personas">Cantidad de personas (max:150):</label><br>
+                    <input type="number" min="2" max=150 id="personas" name="personas"><br>
+                    <label for="fecha">Fecha:</label><br>
+                    <input type="date" id="fecha" name="fecha"><br>
+                    <label for="hora">Hora:</label><br>
+                    <input type="time" id="time" name="time"><br><br>
+                    <button type="button" onclick="alert('Enviando form')">Contactenos</button>
+                </form>
+            
+            </div>
+        </section>
     </main>
     <footer>
         <div id="footer">
