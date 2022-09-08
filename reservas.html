@@ -45,43 +45,38 @@
         <div class="background">
             <br>
             <div class="formbase">
-                <form action="" class="form" autocomplete="off">
+                <form action="" class="form">
                     <!-- TODOS LOS CAMPOS OBLIGATORIOS TELEFONO CON PATTERN [0-9]{10} VALIDAR-->
                     <label for="nombre">Nombre:</label>
                     <input class="box" type="text" id="nombre" name="nombre" required><br>
                     <label for="apellido">Apellido:</label>
                     <input class="box" type="text" id="apellido" name="apellido" required><br>
                     <label for="telefono">Teléfono:</label>
-                    <input class="box" type="tel" id="telefono" name="telefono" pattern="[0-9]{10}" required><br>
+                    <input class="box" type="tel" id="telefono" name="telefono" placeholder="1145458989"pattern="[0-9]{10}" required><br>
                     <label for="mail">Mail:</label>
                     <input class="box" type="email" id="email" name="apellido" required><br>
-                </form>
-            </div>
-            <br>
-            <div class="formbase">
-                <form action="" class="form" autocomplete="off">
+
+
+                    <br>
                     <label for="evento" class="">Elije un tipo de evento:</label>
-                    <select class="box" id="evento" name="evento">
+                    <select class="box" id="evento" name="evento" required>
                         <option value="Cumpleaños">Cumpleaños</option>
                         <option value="Institucional/Corporativo">Institucional/ Corporativo</option>
                         <option value="Familiar">Familiar</option>
                     </select>
                     &nbsp;&nbsp;
                     <label for="evento">Selecciona la cantidad de personas:</label>
-                    <input type="number" min="2" max="20" class="box">
+                    <input type="number" min="2" max="20" class="box" required>
                     &nbsp;&nbsp;
                     <label for="evento">Selecciona el horario:</label>
                     <input type="date" class="box" required>
                     <input type="time" class="box" required>
+                    <br>
+
+                    <input type="submit" class="boton_enviar">
+                    <br>
                 </form>
             </div>
-            <br>
-            <div class="formbase">
-                <form action="" class="formbutton" >
-                        <input  type="submit" class="boton_enviar">
-                </form>
-            </div>
-            <br>
         </div>
     </main>
     <footer>

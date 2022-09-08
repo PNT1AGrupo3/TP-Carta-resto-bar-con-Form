@@ -59,11 +59,11 @@ a:hover {
 
 
 .boton_enviar {
-    width: 10%;
+    width: 50%;
     height: 10%;
     border-radius: 10px;
     border-color: red;
-    margin: 0 500px;
+    margin: 0 70px;
     position: relative;
     padding: 10px 10px;
     font-size: 15px;
