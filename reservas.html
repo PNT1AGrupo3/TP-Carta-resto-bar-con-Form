@@ -46,15 +46,15 @@
             <br>
             <div class="formbase">
                 <form action="" class="form" autocomplete="off">
-                    <!-- nombre apellido telefono  mail, tipo de evento(cumpleaños, institucional/corporativo, familiar) cantidad de personas fecha hora -->
+                    <!-- TODOS LOS CAMPOS OBLIGATORIOS TELEFONO CON PATTERN [0-9]{10} VALIDAR-->
                     <label for="nombre">Nombre:</label>
-                    <input class="box" type="text" id="nombre" name="nombre"><br>
+                    <input class="box" type="text" id="nombre" name="nombre" required><br>
                     <label for="apellido">Apellido:</label>
-                    <input class="box" type="text" id="apellido" name="apellido"><br>
+                    <input class="box" type="text" id="apellido" name="apellido" required><br>
                     <label for="telefono">Teléfono:</label>
-                    <input class="box" type="tel" id="telefono" name="telefono"><br>
+                    <input class="box" type="tel" id="telefono" name="telefono" pattern="[0-9]{10}" required><br>
                     <label for="mail">Mail:</label>
-                    <input class="box" type="text" id="mail" name="apellido"><br>
+                    <input class="box" type="email" id="email" name="apellido" required><br>
                 </form>
             </div>
             <br>
@@ -68,7 +68,7 @@
                     </select>
                     &nbsp;&nbsp;
                     <label for="evento">Selecciona la cantidad de personas:</label>
-                    <input type="number" min="5" max="20" class="box">
+                    <input type="number" min="2" max="20" class="box">
                     &nbsp;&nbsp;
                     <label for="evento">Selecciona el horario:</label>
                     <input type="date" class="box" required>
