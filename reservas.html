@@ -6,7 +6,6 @@
     <meta charset="utf-8" />
 
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="styleform.css" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
@@ -43,35 +42,47 @@
 
     </div>
     <main>
-        <section class="formbase">
-            <div class="formcenter">
-                <form action="/action_page.php" method="post">
-                    <label for="nombre">Nombre:</label><br>
-                    <input type="text" id="nombre" name="nombre" required autofocus><br>
-                    <label for="apellido">Apellido:</label><br>
-                    <input type="text" id="apellido" name="apellido" required><br>
-                    <label for="telefono">Teléfono:</label><br>
-                    <input type="tel" placeholder="1145458989" pattern= "[0-9]{10}"  id="telefono" name="telefono" required><br>
-                    <label for="mail">Mail:</label><br>
-                    <input type="email" id="email" name="email" required><br>
-                    <label for="tipo">Tipo de evento:</label><br>
-                    <select id="tipo" name="tipo" required>
-                        <option value="Cumpleaños">Cumpleaños</option>
-                        <option value="Institucional">Institucional</option>
-                        <option value="Corporativo">Corporativo</option>
-                        <option value="Familiar">Familiar</option>
-                    </select><br>
-                    <label for="personas">Cantidad de personas (2 a 150):</label><br>
-                    <input type="number" min="2" max=150 id="personas" name="personas" required><br>
-                    <label for="fecha">Fecha:</label><br>
-                    <input type="date" id="fecha" name="fecha" required><br>
-                    <label for="hora">Hora:</label><br>
-                    <input type="time" id="time" name="time" required><br><br>
-                    <button type="submit">Contactenos</button>
-                    <button type="reset">Restablecer</button>
+        <div class="background">
+            <br>
+            <div class="formbase">
+                <form action="" class="form" autocomplete="off">
+                    <!-- nombre apellido telefono  mail, tipo de evento(cumpleaños, institucional/corporativo, familiar) cantidad de personas fecha hora -->
+                    <label for="nombre">Nombre:</label>
+                    <input class="box" type="text" id="nombre" name="nombre"><br>
+                    <label for="apellido">Apellido:</label>
+                    <input class="box" type="text" id="apellido" name="apellido"><br>
+                    <label for="telefono">Teléfono:</label>
+                    <input class="box" type="tel" id="telefono" name="telefono"><br>
+                    <label for="mail">Mail:</label>
+                    <input class="box" type="text" id="mail" name="apellido"><br>
                 </form>
             </div>
-        </section>
+            <br>
+            <div class="formbase">
+                <form action="" class="form" autocomplete="off">
+                    <label for="evento" class="">Elije un tipo de evento:</label>
+                    <select class="box" id="evento" name="evento">
+                        <option value="Cumpleaños">Cumpleaños</option>
+                        <option value="Institucional/Corporativo">Institucional/ Corporativo</option>
+                        <option value="Familiar">Familiar</option>
+                    </select>
+                    &nbsp;&nbsp;
+                    <label for="evento">Selecciona la cantidad de personas:</label>
+                    <input type="number" min="5" max="20" class="box">
+                    &nbsp;&nbsp;
+                    <label for="evento">Selecciona el horario:</label>
+                    <input type="date" class="box" required>
+                    <input type="time" class="box" required>
+                </form>
+            </div>
+            <br>
+            <div class="formbase">
+                <form action="" class="formbutton" >
+                        <input  type="submit" class="boton_enviar">
+                </form>
+            </div>
+            <br>
+        </div>
     </main>
     <footer>
         <div id="footer">

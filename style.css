@@ -1,6 +1,6 @@
 body {
     background: rgb(0, 0, 0);
-    color: rgb(0, 0, 0);
+    color: green;
     font-size: 25px;
     font-family: Helvetica;
 }
@@ -46,6 +46,39 @@ a:hover {
 
 .newmenu {
     display: inline;
+}
+
+.form {
+    margin: auto;
+    width: 400px;
+}
+.formbutton {
+    margin: auto;
+    width: 70%;
+}
+
+
+.boton_enviar {
+    width: 10%;
+    height: 10%;
+    border-radius: 10px;
+    border-color: red;
+    margin: 0 500px;
+    position: relative;
+    padding: 10px 10px;
+    font-size: 15px;
+    background: red;
+    color: white;
+    text-decoration: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.boton_enviar:hover {
+    background: black;
+    border-color: black;
 }
 
 .boton {
@@ -116,6 +149,17 @@ a:hover {
     margin-left: 110px;
     margin-right: 110px;
 }
+.formbase {
+    background-color: rgb(243, 180, 151);
+    border-radius: 10px;
+    border:1px solid;
+    
+    border-color: rgb(0, 0, 0);
+    opacity: 0.9;
+    padding: 8px;
+    margin-left: 110px;
+    margin-right: 110px;
+}
 
 .plato {
     text-align: center;
@@ -130,19 +174,18 @@ a:hover {
     font-weight: bold;
 }
 .plato h3{
-    text-align: center;
     font-family: Courier;
     font-weight: bold;
 }
 .plato h5 {
     font-size: 25px;
     text-align: left;
-    
+    margin-left: 40px;
 }
 
 .plato p {
     text-align: center;
-    
+    margin-left: 40px;
 }
 
 .seccion {
@@ -163,6 +206,7 @@ a:hover {
 .center {
     margin: auto;
     width: 60%;
+
     padding: 10px;
 }
 
@@ -190,4 +234,21 @@ a:hover {
     text-align: center;
     width: 170px;
     height: 130px;
+}
+
+.box {
+    background-color: rgb(255, 255, 255);
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid black;
+    outline: none;
+}
+
+.box :hover {
+    background-color: rgb(243, 180, 151);
+    border-bottom-color: black;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
 }
