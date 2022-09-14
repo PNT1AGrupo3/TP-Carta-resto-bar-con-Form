@@ -55,8 +55,6 @@
                     <input class="box" type="tel" id="telefono" name="telefono" placeholder="1145458989"pattern="[0-9]{10}" required><br>
                     <label for="mail">Mail:</label>
                     <input class="box" type="email" id="email" name="apellido" required><br>
-
-
                     <br>
                     <label for="evento" class="">Elije un tipo de evento:</label>
                     <select class="box" id="evento" name="evento" required>
@@ -72,8 +70,7 @@
                     <input type="date" class="box" required>
                     <input type="time" class="box" required>
                     <br>
-
-                    <input type="submit" onclick="js/formSubmit/submitClick" class="boton_enviar">
+                    <input type="submit" onClick="return submitClick()" class="boton_enviar">
                     <br>
                 </form>
             </div>
@@ -94,6 +91,7 @@
             </nav>
         </div>
     </footer>
+    <script type="text/javascript" src="js/formSubmit.js"></script>
     <!--update-->
 </body>
 
